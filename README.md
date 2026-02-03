@@ -27,82 +27,6 @@ streamlit run wifi_app.py
 
 The app will open in your browser at `http://localhost:8501`
 
-## Deployment Options
-
-### Option 1: Streamlit Community Cloud (Recommended - Free)
-
-1. **Create a GitHub account** (if you don't have one)
-
-2. **Create a new repository** on GitHub and push your code:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
-   git push -u origin main
-   ```
-
-3. **Go to [share.streamlit.io](https://share.streamlit.io)**
-
-4. **Sign in with GitHub**
-
-5. **Click "New app"**
-
-6. **Fill in the deployment settings**:
-   - Repository: `YOUR_USERNAME/YOUR_REPO`
-   - Branch: `main`
-   - Main file path: `wifi_app.py`
-
-7. **Click "Deploy"**
-
-Your app will be live at: `https://YOUR_APP_NAME.streamlit.app`
-
-### Option 2: Deploy on Heroku
-
-1. **Install Heroku CLI**
-
-2. **Create a `setup.sh` file**:
-   ```bash
-   mkdir -p ~/.streamlit/
-   echo "\
-   [server]\n\
-   headless = true\n\
-   port = $PORT\n\
-   enableCORS = false\n\
-   \n\
-   " > ~/.streamlit/config.toml
-   ```
-
-3. **Create a `Procfile`**:
-   ```
-   web: sh setup.sh && streamlit run wifi_app.py
-   ```
-
-4. **Deploy**:
-   ```bash
-   heroku login
-   heroku create your-app-name
-   git push heroku main
-   ```
-
-### Option 3: Deploy on Railway
-
-1. **Go to [railway.app](https://railway.app)**
-2. **Sign up/Login**
-3. **Click "New Project" → "Deploy from GitHub repo"**
-4. **Select your repository**
-5. **Railway will auto-detect and deploy**
-
-### Option 4: Deploy on Render
-
-1. **Go to [render.com](https://render.com)**
-2. **Sign up/Login**
-3. **Click "New" → "Web Service"**
-4. **Connect your GitHub repository**
-5. **Configure**:
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `streamlit run wifi_app.py --server.port $PORT --server.address 0.0.0.0`
 
 ## Platform-Specific Notes
 
@@ -182,8 +106,7 @@ Free to use for personal projects. Please respect privacy and security best prac
 
 ## Contributing
 
-Feel free to submit issues and enhancement requests!
-
+**Designed By SANDUN WIJESINGHA**
 ---
 
 **Made with ❤️ using Streamlit**
