@@ -1,4 +1,3 @@
-streamlit==1.31.0
-qrcode[pil]==7.4.2
-Pillow==10.2.0
-speedtest-cli
+streamlit>=1.30.0
+qrcode[pil]
+Pillow
